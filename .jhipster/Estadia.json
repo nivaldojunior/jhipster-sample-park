@@ -1,0 +1,37 @@
+{
+  "name": "Estadia",
+  "fields": [
+    {
+      "fieldName": "veiculoID",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "entrada",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "saida",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "veiculo",
+      "otherEntityRelationshipName": "estadia",
+      "relationshipName": "veiculoID",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201211211547",
+  "entityTableName": "estadia",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

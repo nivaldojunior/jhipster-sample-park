@@ -1,0 +1,34 @@
+{
+  "name": "Nota",
+  "fields": [
+    {
+      "fieldName": "estadiaID",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "valorTotal",
+      "fieldType": "Float"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "estadia",
+      "otherEntityRelationshipName": "nota",
+      "relationshipName": "estadiaID",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20201211211647",
+  "entityTableName": "nota",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

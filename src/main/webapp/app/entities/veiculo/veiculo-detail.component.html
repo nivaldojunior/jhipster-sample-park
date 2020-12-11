@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="veiculo">
+            <h2><span>Veiculo</span> {{ veiculo.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Modelo</span></dt>
+                <dd>
+                    <span>{{ veiculo.modelo }}</span>
+                </dd>
+                <dt><span>Placa</span></dt>
+                <dd>
+                    <span>{{ veiculo.placa }}</span>
+                </dd>
+                <dt><span>Marca</span></dt>
+                <dd>
+                    <span>{{ veiculo.marca }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/veiculo', veiculo.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "Valor",
+  "fields": [
+    {
+      "fieldName": "primeiraHora",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "demaisHoras",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201211211747",
+  "entityTableName": "valor",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,40 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="nota">
+            <h2><span>Nota</span> {{ nota.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Estadia ID</span></dt>
+                <dd>
+                    <span>{{ nota.estadiaID }}</span>
+                </dd>
+                <dt><span>Valor Total</span></dt>
+                <dd>
+                    <span>{{ nota.valorTotal }}</span>
+                </dd>
+                <dt><span>Estadia ID</span></dt>
+                <dd>
+                    <div *ngIf="nota.estadiaID">
+                        <a [routerLink]="['/estadia', nota.estadiaID?.id, 'view']">{{ nota.estadiaID?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/nota', nota.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
