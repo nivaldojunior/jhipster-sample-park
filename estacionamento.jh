@@ -1,0 +1,32 @@
+entity Veiculo {
+	id Integer,
+	modelo String,
+	placa String,
+	marca String
+}
+
+entity Estadia {
+	id Integer,
+	veiculoID Integer,
+	entrada Instant,
+	saida Instant
+}
+
+entity Nota {
+	id Integer,
+	estadiaID Integer,
+	valorTotal Float
+}
+
+entity Valor {
+	primeiraHora Long,
+	demaisHoras Long,
+}
+
+relationship ManyToOne {
+	Estadia{veiculoID} to Veiculo
+}
+
+relationship OneToOne {
+	Nota{estadiaID} to Estadia
+}
