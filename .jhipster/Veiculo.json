@@ -1,0 +1,29 @@
+{
+  "name": "Veiculo",
+  "fields": [
+    {
+      "fieldName": "modelo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "placa",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marca",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201211211447",
+  "entityTableName": "veiculo",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
